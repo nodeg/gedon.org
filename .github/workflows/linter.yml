@@ -1,0 +1,21 @@
+name: Linter
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  lint_markdown:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+    - name: Install dependencies
+      run:  gem install mdl
+    - name: Run markdownlint
+      run:  mdl -c .mdlrc content/post/
