@@ -10,7 +10,7 @@ jobs:
         with:
           urls: |
             https://gedon.org
-            https://gedon.org/post
+            https://gedon.org/post/
           # budgetPath: ./budget.json # test performance budgets
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
