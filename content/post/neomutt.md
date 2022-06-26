@@ -6,13 +6,15 @@ draft: false
 
 In order to use Neomutt which is only a mail user agent, you need to install tools to fetch and send mail. I use `mbsync` for delivering mail and `msmtp` for sending mail.
 
+```bash
+zypper in mbsync msmtp neomutt
 ```
-$ zypper in mbsync msmtp neomutt
-```
-# Configuring mbsync
+
+## Configuring mbsync
 
 The instructions on how to setup `mbsync` can be found in the man page (`man 1 mbsync`) under the section "configuration". Below you find a basic `.mbsyncrc` configuration file which uses one email account for receiving email.
-```
+
+```bash
 # Account information
 IMAPAccount home
 Host biela.uberspace.de
@@ -40,19 +42,21 @@ Create Both
 Expunge Both
 SyncState *
 ```
+
 ## Edit crontab for fetching mail regularly
 
 I added an entry to crontab (`crontab -e`) to check for new mail every 5 minutes.
 
-```
+```bash
 # crontab -l
 */5 * * * * mbsync -a 2>>$HOME/mail/logs/mbsync.log
 ```
 
-# Configuring msmtp
+## Configuring msmtp
 
 As with `mbsync` the configuration of `msmtp` can be done by reading its man page (`man 1 msmtp`). Below is a very basic `.msmtp` configuration file.
-```
+
+```bash
 defaults
 logfile ~/mail/log/msmtp.log
 
@@ -71,10 +75,11 @@ tls_starttls on
 account default : home
 ```
 
-# Configuring NeoMutt
+## Configuring NeoMutt
 
-NeoMutt can be configurated very comprehensively according to its [documentation](https://neomutt.org/man/neomuttrc), so I started with adjusting the `sample.neomuttrc-starter` from [here](https://github.com/neomutt/neomutt/blob/master/contrib/sample.neomuttrc-starter). The result can be seen below.
-```
+NeoMutt can be configured very comprehensively according to its [documentation](https://neomutt.org/man/neomuttrc), so I started with adjusting the `sample.neomuttrc-starter` from [here](https://github.com/neomutt/neomutt/blob/master/contrib/sample.neomuttrc-starter). The result can be seen below.
+
+```bash
 # Identity
 set realname = "Max Mustermann"
 set from = "max@mustermann.org"

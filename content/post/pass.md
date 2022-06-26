@@ -4,14 +4,15 @@ date: 2020-06-01T19:29:30+02:00
 draft: false
 ---
 
-# Prerequisities
+## Prerequisites
 
 I use several plugins for `pass` and the tool `tomb` to be more flexible and secure:
--  [pass-import](https://github.com/roddhjav/pass-import)
--  [pass-update](https://github.com/roddhjav/pass-update)
--  [pass-audit](https://github.com/roddhjav/pass-audit)
--  [pass-tomb](https://github.com/roddhjav/pass-tomb)
--  [tomb](https://github.com/dyne/Tomb)
+
+* [pass-import](https://github.com/roddhjav/pass-import)
+* [pass-update](https://github.com/roddhjav/pass-update)
+* [pass-audit](https://github.com/roddhjav/pass-audit)
+* [pass-tomb](https://github.com/roddhjav/pass-tomb)
+* [tomb](https://github.com/dyne/Tomb)
 
 ```bash
 # requisities for pass-import
@@ -47,7 +48,7 @@ cd Tomb-2.7
 make install
 ```
 
-# Generate GPG key to open pass
+## Generate GPG key to open pass
 
 ```bash
 gpg --gen-full-key --expert
@@ -59,9 +60,10 @@ uid                              (Password Store) (Password Store) <xxxx@xxxx.de
 sub   cv25519/0xxxxx 2020-06-09 [E]
 ```
 
-# Initialize pass and tomb
+## Initialize pass and tomb
 
 With the newly created GPG key we create a new [tomb](https://github.com/dyne/Tomb) and inside this tomb a initialize the passwort store.
+
 ```bash
 # pass tomb gpg-id
 pass tomb "Password Store (Password Store) <xxxx@xxxx.de>"
@@ -75,7 +77,6 @@ pass tomb "Password Store (Password Store) <xxxx@xxxx.de>"
 ```
 
 Pass is now initialized and created the tombfile with the key itself and the directory `~/.password-store` where the tomb with the passwords will be mounted (see code above).
-
 
 After that we create a git repository with pass to track every change.
 
@@ -93,7 +94,7 @@ create mode 100644 .gitattributes
 
 You can now add a remote repository if desired to distribute or backup the encrypted password files. I will skip this for now.
 
-# Importing passwords from KeePassXC
+## Importing passwords from KeePassXC
 
 To import passwords stored in a KeePassXC database I use the tool `pass-import`:
 
@@ -111,7 +112,7 @@ Password for passwords.kdbx:
 
 After the import is finished your all set and can use `pass` according to its documentation (`man 1 pass`).
 
-# Auditing your passwords
+## Auditing your passwords
 
 To audit your stored passwords, `pass-audit` uses [K-anonymity](https://blog.cloudflare.com/validating-leaked-passwords-with-k-anonymity) to retrieve the knowledge of breached passwords from HIBP server.
 

@@ -12,6 +12,7 @@ and successfully flashed coreboot 4.5 on my T420, replacing the proprietary BIOS
 On 15th of October 2017 I built coreboot 4.6 and flashed the new image on my T420 and I am using this version until today. I did the following steps to flash coreboot. Most of the information are copied over from the corebook documentation on the T420.
 
 The pinout of the Rasbperry Pi 3B is the following:
+
 ```bash
 L                                                             CS
 E                                                             |
@@ -23,6 +24,7 @@ D                                              |    |    |    |                 
 G                                             3.3V  MOSI MISO |                                      GND
 E                                             (VCC)          CLK
 ```
+
 The pinout of the T420 is the following:
 
 ```bash
@@ -32,9 +34,11 @@ MISO  2 --|  |-- 6  CLK
 N/C   3 --|  |-- 7  N/C
 GND   4 --|__|-- 8  VCC
 ```
+
 My chip is a **MX25L6406E** so I have to provide flashrom with the `-c MX25L6406E/MX25L6408E` flag to access the chip.
 
 Step 0 - Saving the old Lenovo BIOS
+
 ```bash
 sudo flashrom -c MX25L6406E/MX25L6408E -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r bios_orig.bin
 sudo flashrom -c MX25L6406E/MX25L6408E -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r bios_orig02.bin
@@ -42,11 +46,13 @@ md5sum bios_orig.bin bios_orig02.bin
 ```
 
 Step 1 - Install tools and libraries needed for coreboot
+
 ```bash
 sudo zypper in bison curl flashrom gcc-ada
-
 ```
+
 Step 2 - Download coreboot source tree
+
 ```bash
 git clone https://review.coreboot.org/coreboot ~/coreboot
 cd coreboot
@@ -62,17 +68,20 @@ mv ~/flashregion_3_gbe.bin gbe.bin
 ```
 
 Step 3 - Build the coreboot toolchain
+
 ```bash
 make crossgcc-i386 CPUS=$(nproc)
 ```
 
 Step 4 - Build the payload - coreinfo
+
 ```bash
 make -C payloads/coreinfo olddefconfig
 make -C payloads/coreinfo
 ```
 
 Step 5 - Configure the build
+
 ```bash
 make menuconfig
 
@@ -96,13 +105,17 @@ Devices
 Generic Driver
     PS/2 keyboard init
 ```
+
 Step 6 - build coreboot
+
 ```bash
 make
 ```
+
 The BIOS can be found in the folder build.
 
 Step 7 - flash coreboot
+
 ```bash
 # Saving the old bios again to check the cable connection before flashing
 sudo flashrom -c MX25L6406E/MX25L6408E -p linux_spi:dev=/dev/spidev0.0,spispeed=512 -r bios01.bin
@@ -114,6 +127,7 @@ sudo flashrom -c MX25L6406E/MX25L6408E -p linux_spi:dev=/dev/spidev0.0,spispeed=
 ### Update coreboot internally without an external flashing device
 
 When using openSUSE Tumbleweed you have to set `iomem=relaxed` as kernel parameter according to the flashrom FAQs.
+
 ```bash
 sudo flashrom -c MX25L6406E/MX25L6408E -p internal:laptop=force_I_want_a_brick -w build/coreboot.rom
 ```
