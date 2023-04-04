@@ -1,6 +1,6 @@
 +++
 title = "About me"
-date = 2022-06-25T11:22:20+01:00
+date = 2022-11-17T09:10:20+01:00
 description = "About"
 draft = false
 +++
@@ -23,5 +23,5 @@ draft = false
 # Security
 
 * HTTPS and HSTS used by default
-* A+ on [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=party.gedon.org&s=185.26.156.59&hideResults=on)
-* A+ on [Security Headers](https://securityheaders.com/?q=https%3A%2F%2Fparty.gedon.org&hide=on&followRedirects=on)
+* A+ on [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=gedon.org)
+* A+ on [Security Headers](https://securityheaders.com/?q=https%3A%2F%2Fgedon.org&hide=on)
