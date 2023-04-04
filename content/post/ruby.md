@@ -110,6 +110,3 @@ RubyGems Environment:
 # Clean up old versions of installed gems
 gem cleanup
 ```
-
-
-
