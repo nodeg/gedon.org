@@ -19,9 +19,3 @@ draft = false
 * Powered by [Hugo](https://github.com/gohugoio/hugo)
 * [prv-hermit](https://github.com/nodeg/prv-hermit) theme originally developed by
   [Track3](https://github.com/Track3/hermit)
-
-# Security
-
-* HTTPS and HSTS used by default
-* A+ on [SSL Labs](https://www.ssllabs.com/ssltest/analyze.html?d=gedon.org)
-* A+ on [Security Headers](https://securityheaders.com/?q=https%3A%2F%2Fgedon.org&hide=on)
