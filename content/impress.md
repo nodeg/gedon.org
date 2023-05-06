@@ -9,7 +9,7 @@ draft = false
 
 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
 
-{{< figure src="/media/address.png" alt="address">}}
+{{ $image := resources.Get "images/address.png" }}
 
 <h2>Redaktionell verantwortlich</h2>
 
