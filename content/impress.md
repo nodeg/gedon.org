@@ -13,7 +13,7 @@ draft = false
 
 <h2>Redaktionell verantwortlich</h2>
 
-{{< figure src="/media/address.png" alt="address">}}
+{{< figure src="images/address.png" alt="address">}}
 
 <h1>Datenschutz&shy;erkl&auml;rung</h1>
 <h2>1. Datenschutz auf einen Blick</h2>
