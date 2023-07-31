@@ -58,7 +58,7 @@ The following table shows the development of Apple product prices in Germany ove
 | ---- | Ultra         | ---          | ---                | ---               |
 | 2022 | Ultra         | 999          | iPhone 8 (iOS 16)  | current           |
 | ---- | Budget        | ---          | ---                | ---               |
-| 2020 | SE 1 (40 )    | 299          | iPhone 6S (iOS 14) | current           |
-| 2022 | SE 2 (40 )    | 299          | iPhone 8 (iOS 16)  | current           |
+| 2020 | SE 1 (40)     | 299          | iPhone 6S (iOS 14) | current           |
+| 2022 | SE 2 (40)     | 299          | iPhone 8 (iOS 16)  | current           |
 
 [^1]: From [Apple's website via archive.org](https://web.archive.org/web/20230000000000*/www.apple.com/de)
