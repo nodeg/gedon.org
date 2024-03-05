@@ -19,10 +19,10 @@ The following table shows the development of Apple product prices in Germany ove
 | 2012 | 5       | 679           | 16                | iOS 10.3.4        |
 | 2013 | 5S      | 699           | 16                | iOS 12.5.7        |
 | 2014 | 6       | 699           | 16                | iOS 12.5.7        |
-| 2015 | 6S      | 739           | 16                | iOS 15.8.1        |
-| 2016 | 7       | 759           | 32                | iOS 15.8.1        |
-| 2017 | 8       | 799           | 64                | iOS 16.7.5        |
-| 2017 | X       | 1149          | 64                | iOS 16.7.5        |
+| 2015 | 6S      | 739           | 16                | iOS 15.8.2        |
+| 2016 | 7       | 759           | 32                | iOS 15.8.2        |
+| 2017 | 8       | 799           | 64                | iOS 16.7.6        |
+| 2017 | X       | 1149          | 64                | iOS 16.7.6        |
 | 2018 | XS      | 1149          | 64                | current           |
 | 2019 | 11      | 799           | 64                | current           |
 | 2020 | 12      | 899           | 64                | current           |
@@ -40,7 +40,7 @@ The following table shows the development of Apple product prices in Germany ove
 | 2021 | 13 mini | 799           | 128               | current           |
 | ---- | Budget  | ---           | ---               | ---               |
 | 2013 | 5C      | 599           | 16                | iOS 10.3.3        |
-| 2016 | SE 1    | 489           | 16                | iOS 15.8.1        |
+| 2016 | SE 1    | 489           | 16                | iOS 15.8.2        |
 | 2018 | XR      | 849           | 64                | current           |
 | 2020 | SE 2    | 479           | 64                | current           |
 | 2022 | SE 3    | 519           | 64                | current           |
