@@ -21,8 +21,8 @@ The following table shows the development of Apple product prices in Germany ove
 | 2014 | 6       | 699           | 16                | iOS 12.5.7        |
 | 2015 | 6S      | 739           | 16                | iOS 15.8.2        |
 | 2016 | 7       | 759           | 32                | iOS 15.8.2        |
-| 2017 | 8       | 799           | 64                | iOS 16.7.6        |
-| 2017 | X       | 1149          | 64                | iOS 16.7.6        |
+| 2017 | 8       | 799           | 64                | iOS 16.7.7        |
+| 2017 | X       | 1149          | 64                | iOS 16.7.7        |
 | 2018 | XS      | 1149          | 64                | current           |
 | 2019 | 11      | 799           | 64                | current           |
 | 2020 | 12      | 899           | 64                | current           |
