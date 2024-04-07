@@ -4,7 +4,7 @@ date = 2024-03-31T16:01:47+02:00
 draft = false
 +++
 
-The steps below show you how to install openSUSE Tumbleweed with [LUKS2](https://gitlab.com/cryptsetup/LUKS2-docs/blob/main/luks2_doc_wip.pdf) and [Argon2id](https://datatracker.ietf.org/doc/html/rfc9106) as Password-Based Key Derivation Function (PBKDF) when using [systemd-boot](https://news.opensuse.org/2024/03/05/systemd-boot-integration-in-os) instead of GRUB2 as bootloader.
+The steps below show you how to install openSUSE Tumbleweed with [LUKS2](https://gitlab.com/cryptsetup/LUKS2-docs/blob/main/luks2_doc_wip.pdf) and [Argon2id](https://datatracker.ietf.org/doc/html/rfc9106) as Password-Based Key Derivation Function (PBKDF) when using [systemd-boot](https://news.opensuse.org/2024/03/05/systemd-boot-integration-in-os)[^1] instead of GRUB2 as bootloader.
 
 1. Perform an installation with full disk encryption
 1. Select `Guided Setup` during partitioning the disk and use LVM
@@ -155,3 +155,5 @@ argon2id      7 iterations, 1048576 memory, 4 parallel threads (CPUs) for 256-bi
 ```
 
 and decide if you want a different cipher instead of `aes-xts-plain64`. The results above represent an Intel i7-8665U.
+
+[^1]: When using `systemd-boot` instead of `GRUB2`, the decryption time for the LUKS2 volume decreased from 29 s to ~2.5 s for me.
