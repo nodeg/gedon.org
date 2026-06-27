@@ -1,7 +1,7 @@
 ---
 title: "Apple product prices over time"
 date: 2023-11-06
-lastmod: 2025-10-01
+lastmod: 2026-06-27
 draft: false
 ---
 
