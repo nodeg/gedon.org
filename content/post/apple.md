@@ -19,11 +19,11 @@ The following table shows the development of Apple product prices in Germany ove
 | 2012 | 5       | 679           | 16                | iOS 10.3.4        |
 | 2013 | 5S      | 699           | 16                | iOS 12.5.7        |
 | 2014 | 6       | 699           | 16                | iOS 12.5.7        |
-| 2015 | 6S      | 739           | 16                | iOS 15.8.5        |
-| 2016 | 7       | 759           | 32                | iOS 15.8.5        |
-| 2017 | 8       | 799           | 64                | iOS 16.7.12       |
-| 2017 | X       | 1149          | 64                | iOS 16.7.12       |
-| 2018 | XS      | 1149          | 64                | iOS 18.7.1        |
+| 2015 | 6S      | 739           | 16                | iOS 15.8.8        |
+| 2016 | 7       | 759           | 32                | iOS 15.8.8        |
+| 2017 | 8       | 799           | 64                | iOS 16.7.15       |
+| 2017 | X       | 1149          | 64                | iOS 16.7.15       |
+| 2018 | XS      | 1149          | 64                | iOS 18.7.9        |
 | 2019 | 11      | 799           | 64                | current           |
 | 2020 | 12      | 899           | 64                | current           |
 | 2021 | 13      | 899           | 128               | current           |
@@ -46,8 +46,8 @@ The following table shows the development of Apple product prices in Germany ove
 | 2021 | 13 mini | 799           | 128               | current           |
 | ---- | Budget  | ---           | ---               | ---               |
 | 2013 | 5C      | 599           | 16                | iOS 10.3.3        |
-| 2016 | SE 1    | 489           | 16                | iOS 15.8.3        |
-| 2018 | XR      | 849           | 64                | iOS 18.7.1        |
+| 2016 | SE 1    | 489           | 16                | iOS 15.8.8        |
+| 2018 | XR      | 849           | 64                | iOS 18.7.9        |
 | 2020 | SE 2    | 479           | 64                | current           |
 | 2022 | SE 3    | 519           | 64                | current           |
 | 2024 | 16e     | 699           | 128               | current           |
@@ -57,11 +57,11 @@ The following table shows the development of Apple product prices in Germany ove
 | Year | Model (size)  | Price [EUR]  | Requirements       | Last supported OS |
 |------|:-------------:|-------------:|:-------------------|:------------------|
 | 2015 | Series 0 (38) | 399          | iPhone 5 (iOS 8.2) | watchOS 4.3.2     |
-| 2016 | Series 1 (38) | 319          | iPhone 5 (iOS 10)  | watchOS 6.3       |
-| 2016 | Series 2 (38) | 419          | iPhone 5 (iOS 10)  | watchOS 6.3       |
-| 2017 | Series 3 (38) | 369          | iPhone 5S (iOS 11) | watchOS 8.8.1     |
-| 2018 | Series 4 (40) | 429          | iPhone 5S (iOS 12) | watchOS 11.6      |
-| 2019 | Series 5 (40) | 449          | iPhone 6S (iOS 13) | watchOS 11.6      |
+| 2016 | Series 1 (38) | 319          | iPhone 5 (iOS 10)  | watchOS 6.3.1     |
+| 2016 | Series 2 (38) | 419          | iPhone 5 (iOS 10)  | watchOS 6.3.1     |
+| 2017 | Series 3 (38) | 369          | iPhone 5S (iOS 11) | watchOS 8.8.2     |
+| 2018 | Series 4 (40) | 429          | iPhone 5S (iOS 12) | watchOS 10.6.2    |
+| 2019 | Series 5 (40) | 449          | iPhone 6S (iOS 13) | watchOS 10.6.2    |
 | 2020 | Series 6 (40) | 418          | iPhone 6S (iOS 14) | current           |
 | 2021 | Series 7 (41) | 479          | iPhone 6S (iOS 14) | current           |
 | 2022 | Series 8 (41) | 499          | iPhone 8 (iOS 16)  | current           |
@@ -74,7 +74,7 @@ The following table shows the development of Apple product prices in Germany ove
 | 2024 | Ultra 2       | 999          | iPhone XS (iOS 17) | current           |
 | 2025 | Ultra 3       | 899          | iPhone 11 (iOS 26) | current           |
 | ---- | Budget        | ---          | ---                | ---               |
-| 2020 | SE 1 (40)     | 299          | iPhone 6S (iOS 14) | watchOS 11.6      |
+| 2020 | SE 1 (40)     | 299          | iPhone 6S (iOS 14) | watchOS 10.6.2    |
 | 2022 | SE 2 (40)     | 299          | iPhone 8 (iOS 16)  | current           |
 | 2025 | SE 3 (40)     | 269          | iPhone 11 (iOS 26) | current           |
 
